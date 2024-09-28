@@ -1,5 +1,5 @@
 {
-  "name": "tweb",
+  "name": "hhh",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,9 @@
   },
   "author": "",
   "license": "GPL-3.0-only",
+  "engines": {                   // Add Node version requirement here
+    "node": ">=16.0.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/preset-env": "^7.23.7",
@@ -55,7 +58,8 @@
     "sass": "^1.69.6",
     "tinyld": "^1.3.4",
     "typescript": "^4.9.5",
-    "vite": "^5.2.10",
+    "vite": "^5.2.10",           // Ensure vite is listed here
+    "serve": "^14.0.0",          // Add serve if you plan to use it for static files
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-solid": "^2.8.0",

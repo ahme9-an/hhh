@@ -19,7 +19,7 @@
   },
   "author": "",
   "license": "GPL-3.0-only",
-  "engines": {                   // Add Node version requirement here
+  "engines": {                 
     "node": ">=16.0.0"
   },
   "devDependencies": {

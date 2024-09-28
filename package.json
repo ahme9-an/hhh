@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "start": "vite --force",
-    "serve": "pnpm run build; node server.js",
-    "build": "pnpm run generate-changelog && vite build",
+    "start": "vite build && serve -s dist",
+    "serve": "serve -s dist",
+    "build": "pnpm run generate-changelog && vite build", 
     "test": "vitest",
     "whybundled": "pnpm run profile && whybundled stats.json",
     "generate-mtproto-types": "node ./src/scripts/generate_mtproto_types.js src/",
@@ -19,7 +19,7 @@
   },
   "author": "",
   "license": "GPL-3.0-only",
-  "engines": {                 
+  "engines": {
     "node": ">=16.0.0"
   },
   "devDependencies": {
@@ -58,8 +58,8 @@
     "sass": "^1.69.6",
     "tinyld": "^1.3.4",
     "typescript": "^4.9.5",
-    "vite": "^5.2.10",           
-    "serve": "^14.0.0",        
+    "vite": "^5.2.10",
+    "serve": "^14.0.0", 
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-handlebars": "^1.6.0",
     "vite-plugin-solid": "^2.8.0",
